@@ -13,7 +13,7 @@
 	html,body{
 		width: 100%;height: 100%;
 		/*background-color:#0D0D19; */
-		background-image: url(bigbg.jpg);
+		background-image: url(img/bigbg.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -104,7 +104,7 @@
 				// console.log(now);
 				index++;   //??????
 				// console.log(typeof now.num)   //num是number类型 now.num也是number类型
-				var url='url('+dirs[now.num]+now.mark+'.png)';  
+				var url='url(img/'+dirs[now.num]+now.mark+'.png)';
 				 //data缓存数据
 				$('<div>').addClass('poker main').attr('id',i+'_'+j).data('num',now.num).css({
 					backgroundImage:url}).appendTo(desk).delay(index*30).animate({
@@ -117,7 +117,7 @@
 		for (; index <poker.length ; index++) {
 			var now=poker[index];   //poke[index]={mark:h,num:1}
 				// console.log(now);    //???index   
-				var url='url('+dirs[now.num]+now.mark+'.png)';
+				var url='url(img/'+dirs[now.num]+now.mark+'.png)';
 				$('<div>').addClass('poker zuo').attr('id',i+'_'+j).data('num',now.num).css({
 					backgroundImage:url}).appendTo(desk).delay(index*30).animate({
 						opacity:1,
